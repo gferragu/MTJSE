@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 
+import glob
+
 ##                     Loading survey data files                             ##
 ##                        Gabriel Ferragut                                   ##
-##                         Sept 25th 2019                                    ##
+##                         Sept 25th 2019                                    ## 
 
+def loadSurvey(experiment,src_dir,sv_dir):
+    
+    # Get list of directory contents
+    files = glob.glob(src_dir + "*.segy")
+    
 
 #%% Define the experiment used #
 #experiment="MENI"
